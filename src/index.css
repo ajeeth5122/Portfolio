@@ -1,0 +1,319 @@
+:root{
+    --lightpurple : rgb(248, 193, 248);
+    --image: url('src/assets/footerimg.png')
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: black;
+}
+.navbar{
+    /* display: grid;
+    grid-template-columns:repeat(1,1fr) ; */
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(50px);
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    /* border: 1px solid red; */
+    /* background-image: linear-gradient( 180deg, lightgreen , rgb(248, 193, 248)); */
+    color: #fff;
+    box-shadow: 0px 0px 7px 1px rgb(218, 212, 212);
+    padding: 10px;
+    animation-name: dropdown ;
+    animation-duration: 5.1s;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+@keyframes dropdown {
+    0%{
+        margin-top: -500px;
+        
+    }
+}
+.Links{
+    display: flex;
+    /* grid-template-columns: repeat(4,1fr); */
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid black; */
+    padding: 0 50px;
+    font-family: sans-serif;
+    
+}
+@media only screen and (max-width: 600px){
+    
+    .navbar{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+    
+
+.Links a{
+    font-size: 20px;
+    padding: 15px 15px;
+    text-decoration: none;
+    
+    font-weight: 500;
+    font-family: 'Lucida Sans', cursive;
+    border-radius: 15px;
+}
+.Links>a:active{
+    font-size: 20px;
+    padding: 15px 15px;
+    
+    border-radius: 15px;
+    background-color: aliceblue;
+}
+.active{
+    color: red;
+    background-color: aquamarine;
+    outline-color: aqua;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: 'Lucida Sans', cursive;
+    
+}
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* border: 1px solid black; */
+    font-size: 50px;
+    padding: 0 25px;
+    margin-left: 25px;
+    align-items: center;
+    
+    
+}
+.logo span{
+    color: aquamarine;
+    margin-left: 25px;
+}
+.logo img{
+   background-color: var(--lightpurple);
+   margin: 10px;    
+   border-radius: 50px;
+    /* height: 35px; */
+}
+.main{
+ 
+   display: flex;
+   flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    /* height: 200px; */
+     /* background-color: black; */
+    padding: 50px 0;
+    margin-top: 0.8px;
+    border-bottom: 1px solid gray;
+    
+   
+}
+
+.Pro-Image{
+    display: flex;
+    justify-content: center;
+    margin: 40px 55px;
+    padding: 2px;
+    overflow: hidden;
+    align-items: flex-start;
+    /* text-align: center; */
+    /* align-content: start; */
+    /* gap: 40px; */
+    width: 300px;
+    height: 300px;
+    /* height: 400px; */
+    box-shadow: 0 0 10px 1px aquamarine;
+    border-radius: 500px;
+    animation: fallin 0.9s ease-in-out;
+    animation-delay: 1300ms;
+   
+    
+}
+@keyframes fallin {
+    0%{
+       transition: translate(1,1) ;
+    }
+}
+
+.title{
+     display: flex;
+     flex-direction: column;
+     justify-content: start;
+     text-align: start;
+     /* font-size: 30px; */
+     color: #fff;
+     /* animation: falldown 0.5s ease-out; */
+}
+.title span{
+    color: aquamarine;
+}
+.title p{
+    color: aquamarine;
+    font-size: 25px;
+}
+.title h3{
+font-size: 35px;
+margin-bottom: 10px;
+}
+.Pro-Image img{
+    width: 310px;
+    /* height: 370px; */
+    border-radius: 400px;
+    
+
+}
+
+.title h1{
+    line-height: 5rem;
+    letter-spacing: 3px;
+    font-size: 70px;
+    color: var(--lightpurple);
+ 
+}
+.title h1 span{
+    font-size: 60px;
+}
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    margin:  120px 20px;
+    justify-content: space-around;
+}
+.abt{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* background-color: aliceblue; */
+    color: #fff;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    font-size: 18px;
+    line-height: 2rem;
+    font-family: sans-serif;
+    max-width: 50%;
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.abt h1{
+    margin-bottom: 25px;
+    font-size: 55px;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--lightpurple);
+}
+.abt h2{
+    margin: 30px 0;
+    color: var(--lightpurple);
+    font-family: 'Times New Roman', Times, serif;
+}
+.abtimg img{
+    max-width: 90%;
+    border-radius: 25px;
+    padding: 10px;
+    margin-top: 25px;
+}
+.abt-left img{
+    max-width: 50%;
+    border-radius: 25px;
+    padding: 10px;
+    margin-top: 25px;
+}
+.abtimg{
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    max-height: 700px;
+    overflow: hidden;
+}
+.abt-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    /* border: 1px solid white; */
+    width: 50%;
+     margin: 25px;
+}
+.abt-left h1{
+    margin-bottom: 25px;
+    font-size: 55px;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--lightpurple);
+    grid-area: span -1 -1;
+}
+.courses{
+    /* color: #fff;
+    background-color: #fff; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 25px;
+    /* border: 1px solid white; */
+    width: 100%;
+    
+   
+}
+.Cor-name:hover {
+    transform: scale(1.2, 1.2);
+    cursor: pointer;
+}
+
+.Cor-name{
+    color: white;
+    font-size: 25px;
+    transition: transform 1s ease-in-out;
+    
+}
+
+
+    
+
+.Cor-name1{
+    color: white;
+    font-size: 25px;
+    transition: transform 5s ease-out;
+}
+
+.Cor-name1:hover {
+transform: rotateY(360deg);
+}
+
+.about1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:  120px;
+    
+    justify-content: space-around;
+}
+.react{
+    animation: spin;
+    animation-duration: 15s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes spin {
+    0%{
+        transform: rotateZ(-360deg);
+    }
+}

@@ -52,13 +52,33 @@ body{
     font-family: sans-serif;
     
 }
-@media only screen and (max-width: 600px){
-    
-    .navbar{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-    }
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .Links {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .Links a,
+  .Links .navlink {
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+  }
 }
+
+
 
     
 

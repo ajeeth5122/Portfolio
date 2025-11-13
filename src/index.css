@@ -31,14 +31,18 @@ body{
     padding: 10px;
     animation-name: dropdown ;
     animation-duration: 5.1s;
-    animation-direction: alternate;
-    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    
 }
 @keyframes dropdown {
     0%{
-        margin-top: -500px;
+        transform: translateY(-100px);
+        border-bottom-color: aquamarine;
         
     }
+    /* 90%{
+        border-bottom: 1px solid aquamarine;
+    } */
 }
 .Links{
     display: flex;
@@ -204,11 +208,7 @@ body{
    
     
 }
-@keyframes fallin {
-    0%{
-       transition: translate(1,1) ;
-    }
-}
+
 
 .title{
      display: flex;
@@ -233,9 +233,16 @@ margin-bottom: 10px;
 .Pro-Image img{
     width: 310px;
     /* height: 370px; */
-    border-radius: 400px;
-    
+    border-radius: 500px;
+    animation: blink;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
 
+}
+@keyframes blink {
+0% {
+    transform: rotateY(360deg);
+}  
 }
 
 .title h1{
@@ -300,6 +307,22 @@ margin-bottom: 10px;
     max-width: 500px;
     max-height: 700px;
     overflow: hidden;
+    animation: getin;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+
+}
+@keyframes getin {
+    0%{
+        transform: translateZ(45deg);
+        
+    }
+    50%{
+        transform: rotateZ(-45deg);
+    }
+    100%{
+        transform: rotateX(0)
+    }
 }
 .abt-left{
     display: flex;
@@ -411,4 +434,95 @@ transform: rotateY(360deg);
     .about{
         color: black !important;
     }
+}
+.contact{
+    color: red;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Portfolio/src/assets/Knight2.jpg);
+    background-position-y: bottom;
+    background-position-x: right;
+    background-size: cover;
+    
+ 
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    border: 0.5px solid #333;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    padding: 20px;
+    border-radius: 15px;    
+    box-shadow: 0 0 20px 0.7px rgb(94, 93, 93);
+    /* background-image: url(Portfolio/src/assets/Knight.jpg); */
+    backdrop-filter: blur(50px);
+    background-position: center;
+    background-size: cover;
+    animation: bgani;
+    animation-duration: 5s;
+    
+}
+@keyframes bgani {
+    0%{
+        transform: translateX(400px);
+        background-position: left;
+    }
+   
+    
+}
+form input{
+    min-width: 400px;
+    border-radius: 10px;
+    margin: 10px 10px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+   font-family: 'Lucida Sans Regular';
+   letter-spacing: 1.2px;
+}
+form input:focus{
+   box-shadow: 1px 0px 0px 1px  navajowhite;
+    background-color: rgb(218, 247, 237);
+}
+textarea{
+    height: 200px;
+    min-width: 400px;
+    margin: 10px 10px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 16px;
+    font-family: 'Lucida Sans Regular';
+}
+form button{
+    padding: 7px 13px;
+    background-color: aquamarine;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    margin: 10px 2px;
+    font-size: 15px;
+    font-family: cursive;
+
+}
+.C-title{
+    color: whitesmoke;
+    margin: 15px;
+    text-shadow: 0px 2px 10px #000;
+    font-family: 'Lucida Sans Regular';
+}
+form button:focus{
+    background-color: red;
+    color: aliceblue;
+    
 }

@@ -258,8 +258,28 @@ margin-bottom: 10px;
 .about{
     display: flex;
     flex-wrap: wrap;
-    margin:  120px 20px;
+    margin: 0px 20px;
     justify-content: space-around;
+    padding: 70px 0;
+    animation: fade;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5.1s;
+}
+@keyframes fade{
+    0%{
+        opacity: 5%;
+    }
+    50%{
+        opacity: 20%;
+    }
+    75%{
+        opacity: 50%;
+    }
+     100%{
+        opacity: 100%;
+    }
+   
+
 }
 .abt{
     display: flex;
@@ -308,17 +328,17 @@ margin-bottom: 10px;
     max-height: 700px;
     overflow: hidden;
     animation: getin;
-    animation-duration: 10s;
+    animation-duration: 3s;
     animation-timing-function: ease;
 
 }
 @keyframes getin {
     0%{
-        transform: translateZ(45deg);
+        transform: translateZ(5deg);
         
     }
     50%{
-        transform: rotateZ(-45deg);
+        transform: rotateZ(-5deg);
     }
     100%{
         transform: rotateX(0)

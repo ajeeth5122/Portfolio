@@ -11,7 +11,8 @@ body{
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-color: black;
+    background-color: #333;
+
 }
 .navbar{
     /* display: grid;
@@ -180,10 +181,15 @@ body{
     align-items: center;
     text-align: center; 
     /* height: 200px; */
-    background-image: url(./assets/footerimg.png);
+    /* background-image: url(./assets/footerimg.png); */
     padding: 50px 0;
     margin-top: 0.8px;
     border-bottom: 1px solid gray;
+    background-image: url(Portfolio/src/assets/footerimg.png);
+    background-position-x: left;
+    background-position-y: center;
+    background-size: cover;
+    
     
    
 }
@@ -205,6 +211,7 @@ body{
     border-radius: 500px;
     animation: fallin 0.9s ease-in-out;
     animation-delay: 1300ms;
+    
    
     
 }
@@ -237,6 +244,7 @@ margin-bottom: 10px;
     animation: blink;
     animation-duration: 3s;
     animation-timing-function: ease-in;
+    
 
 }
 @keyframes blink {

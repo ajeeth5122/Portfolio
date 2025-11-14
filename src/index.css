@@ -31,7 +31,7 @@ body{
     box-shadow: 0px 0px 7px 1px rgb(218, 212, 212);
     padding: 10px;
     animation-name: dropdown ;
-    animation-duration: 5.1s;
+    animation-duration: 3.1s;
     animation-timing-function: ease-in-out;
     
 }
@@ -181,11 +181,11 @@ body{
     align-items: center;
     text-align: center; 
     /* height: 200px; */
-    /* background-image: url(./assets/footerimg.png); */
+    background-image: url(./assets/footerimg.png);
     padding: 50px 0;
     margin-top: 0.8px;
     border-bottom: 1px solid gray;
-    background-image: url(Portfolio/src/assets/footerimg.png);
+   
     background-position-x: left;
     background-position-y: center;
     background-size: cover;
@@ -249,8 +249,12 @@ margin-bottom: 10px;
 }
 @keyframes blink {
 0% {
-    transform: rotateY(360deg);
+    /* transform: rotateY(360deg); */
+    opacity: 0%;
 }  
+100%{
+    opacity: 100%;
+}
 }
 
 .title h1{
@@ -271,7 +275,7 @@ margin-bottom: 10px;
     padding: 70px 0;
     animation: fade;
     animation-timing-function: ease-in-out;
-    animation-duration: 5.1s;
+    animation-duration: 3.1s;
 }
 @keyframes fade{
     0%{
@@ -494,13 +498,12 @@ form{
     background-position: center;
     background-size: cover;
     animation: bgani;
-    animation-duration: 5s;
+    animation-duration: 3s;
     
 }
 @keyframes bgani {
     0%{
-        transform: translateX(400px);
-        background-position: left;
+        transform: translateX(-300px);
     }
    
     
@@ -553,4 +556,21 @@ form button:focus{
     background-color: red;
     color: aliceblue;
     
+}
+.Footer{
+    height: 100px;
+    border: 1px solid red;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url(Portfolio/src/assets/footerimg.png); */
+    background-color: rgb(118, 118, 118);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    margin-top: 5px;
+    color: gray;
+    padding: 18px;
+    position: sticky;
+    bottom: -100px;
+    backdrop-filter: blur(25px);
 }

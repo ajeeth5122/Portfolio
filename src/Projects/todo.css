@@ -1,0 +1,73 @@
+.Todo{
+    color: white;
+    background-image: url('Portfolio/src/assets/dog.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: 250vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.lists{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    height: fit-content;
+    width: 40%;
+    margin-top: 45px;
+    border-radius: 25px;
+    box-shadow: 0 0 20px 0.55px #444;
+}
+.listTitle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    /* border: 1px solid black; */
+    text-align: center;
+    width: 100%;
+    backdrop-filter: blur(55px);
+    border-collapse: collapse;
+    border-radius: 25px;
+}
+.listTitle i{
+    font-size: 45px;
+    font-weight: 900;
+    color: white;
+}
+.inputbutton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(50px);
+    padding: 15px 0px;
+    border-radius: 25px;
+}   
+.lists input{
+    margin: 10px;
+    width: 70%;
+    /* max-width: 300px; */
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-family: monospace ;
+
+    
+}
+.inputbutton i{
+    font-size: 30px;
+    margin-left: -50px;
+    color: black;
+    font-weight: 1200;
+    background-color: maroon;
+    padding:2px 5px;
+    border-top-right-radius: 10px;
+    border-Bottom-right-radius: 10px;
+}

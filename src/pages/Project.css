@@ -1,0 +1,20 @@
+.ProjectHead{
+display: flex;
+justify-content: center;
+font-family: "Helvetica", cursive;
+margin-top: 25px;
+}
+.proj1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: maroon;
+    color: black;
+    font-family: Times cursive;
+    padding: 10px 25px;
+    border-radius: 15px;
+}
+.proj1 i{
+    margin-right: 12px;
+    font-size: 35px;
+}

@@ -11,7 +11,6 @@ function Contact() {
 
   const Handleclick=(e)=>{
     e.preventDefault()
-    console.log(userdata)
     setUserdata({
     username : "",
     userEmail :"",

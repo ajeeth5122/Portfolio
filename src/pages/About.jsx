@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../Component/Header'
+import Footer from '../Component/Footer'
 import CardFrame from '../Frames/CardFrame'
 import Aje from '../assets/AJE.png'
 import html from '../assets/HTML.png'
@@ -65,6 +66,7 @@ function About() {
         </div>
 
       </div>
+      <Footer/>
     </>
   )
 }

@@ -1,7 +1,9 @@
 import React, { useRef, useState } from 'react'
 import '../Projects/todo.css'
+import { Navigate, useNavigate } from 'react-router-dom';
 
 function TodoList() {
+  const navigate = useNavigate();
     const [todo,setTodo]=useState([]);
     const inputRef=useRef();
     const date= new Date()
@@ -28,7 +30,7 @@ function TodoList() {
     console.log(todo)
   return (
     <>
-   
+   <i onClick={(e)=>navigate("/")  } className=" home bi bi-house-fill">Home</i>
     <div className='Todo' >
         <div className='lists' >
             <div className='listTitle'>
@@ -42,17 +44,18 @@ function TodoList() {
            </div>
         </div>
         
-    </div>
+    
     <div className='todos'>
         {todo.map((todos)=>
         <div className='task' key={todos.id}>
           <h1>{todos.text}</h1>
           {todos.mins <= 9 ? <p>Time:{todos.hour}:0{todos.min}</p> : <p>Time:{todos.hour}:{todos.min}</p> }
           <div className='todo-btn'>
-          <button>complete</button>
-          <button>delete</button>
+          <button className='comp'>complete</button>
+          <button className='del'>delete</button>
           </div>
         </div> )}
+        </div>
         </div>
     </>
   )

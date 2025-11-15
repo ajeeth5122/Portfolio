@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react'
 import '../Projects/todo.css'
-import Header from '../Component/Header';
 
 function TodoList() {
     const [todo,setTodo]=useState([]);
@@ -44,6 +43,17 @@ function TodoList() {
         </div>
         
     </div>
+    <div className='todos'>
+        {todo.map((todos)=>
+        <div className='task' key={todos.id}>
+          <h1>{todos.text}</h1>
+          {todos.mins <= 9 ? <p>Time:{todos.hour}:0{todos.min}</p> : <p>Time:{todos.hour}:{todos.min}</p> }
+          <div className='todo-btn'>
+          <button>complete</button>
+          <button>delete</button>
+          </div>
+        </div> )}
+        </div>
     </>
   )
 }

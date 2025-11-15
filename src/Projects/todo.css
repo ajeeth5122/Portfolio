@@ -1,14 +1,10 @@
+
 .Todo{
     color: white;
-    background-image: url('Portfolio/src/assets/dog.jpg');
-    height: 100vh;
-    background-position: center;
-    background-size: 250vh;
-    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    
-    
+    margin: 20px 10px;
+    background-image: url('Portfolio/src/assets/dog.jpg');
 }
 .lists{
     display: flex;
@@ -33,11 +29,12 @@
     backdrop-filter: blur(55px);
     border-collapse: collapse;
     border-radius: 25px;
+    background-image: url("Portfolio/src/assets/dog.jpg");
 }
 .listTitle i{
     font-size: 45px;
     font-weight: 900;
-    color: white;
+    color: black;
 }
 .inputbutton{
     width: 100%;
@@ -70,4 +67,31 @@
     padding:2px 5px;
     border-top-right-radius: 10px;
     border-Bottom-right-radius: 10px;
+}
+.todos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    flex-direction: column;
+}
+.task{
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 20px;
+    background-image: url('Portfolio/src/assets/dog.jpg');
+}
+.todo-btn{
+    display: flex;
+    justify-content: center;
+    
+}
+.todo-btn button{
+    flex-grow: 1;
+    border-radius: 5px;
+    background-image: url("Portfolio/src/assets/Knight.jpg");
 }

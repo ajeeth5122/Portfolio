@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../Component/Header'
 import './Project.css'
-import { Navigate, useNavigate } from 'react-router-dom'
+import { Navigate, NavLink, useNavigate } from 'react-router-dom'
 
 
 function Project() {
@@ -13,7 +13,7 @@ function Project() {
     
   
       <div className='proj1'>
-      <h1 ><i className="bi bi-list-task"></i>Todo List</h1>
+      <NavLink to='/Project/TodoList' ><i className="bi bi-list-task"></i>Todo List</NavLink>
       </div>
     
    

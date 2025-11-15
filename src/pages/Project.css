@@ -7,7 +7,8 @@ margin-top: 25px;
 .proj1{
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
+    text-align: center;
     background-color: maroon;
     color: black;
     font-family: Times cursive;
@@ -16,5 +17,8 @@ margin-top: 25px;
 }
 .proj1 i{
     margin-right: 12px;
+    font-size: 35px;
+}
+ a{
     font-size: 35px;
 }

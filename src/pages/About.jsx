@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../Component/Header'
-import Footer from '../Component/Footer'
+
 import CardFrame from '../Frames/CardFrame'
 import Aje from '../assets/AJE.png'
 import html from '../assets/HTML.png'
@@ -9,6 +9,7 @@ import Boots from '../assets/Boots1.png'
 import js from '../assets/JS1.png'
 import reactL from '../assets/REACT.png'
 import Aj2 from '../assets/AJ2.png'
+import Footer from '../Component/Footer'
 
 function About() {
   return (

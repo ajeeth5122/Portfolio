@@ -43,6 +43,8 @@ body{
     0%{
         transform: translateY(-100px);
         border-bottom-color: aquamarine;
+        backdrop-filter: blur(50px);
+        z-index: 1;
         
     }
     /* 90%{

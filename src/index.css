@@ -29,6 +29,8 @@ body{
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    /* background-image: url(.//assets/Knight.jpg); */
+   background-color: steelblue;
     /* border: 1px solid red; */
    
     color: #fff;
@@ -156,12 +158,12 @@ a{
 } */
 .active{
     color: black;
-    background-color: pink;
+    background-color: snow;
     outline-color: aqua;
     text-decoration: none;
     font-weight: 500;
     font-family: 'Lucida Sans', cursive;
-     box-shadow: 0 0 5px 3px lightblue;
+     box-shadow: 0 0 15px 2px snow;
 }
 .logo{
     display: flex;
@@ -192,15 +194,17 @@ a{
     justify-content: center;
     align-items: center;
     text-align: center; 
-    /* height: 200px; */
+    height: 600px;
+    /* background-color: mediumturquoise; */
     background-image: url(./assets/footerimg.png);
     padding: 50px 0;
     margin-top: 0.8px;
     border-bottom: 1px solid gray;
-    backdrop-filter: blur(15px);
+    /* backdrop-filter: blur(15px); */
     background-position-x: left;
     background-position-y: center;
     background-size: cover;
+    /* height: 100vh; */
     
     
    
@@ -397,6 +401,7 @@ margin-bottom: 10px;
     /* padding: 25px; */
     /* border: 1px solid white; */
     width: 100%;
+    /* margin-bottom: 150px ; */
   
     
    
@@ -569,20 +574,15 @@ form button:focus{
     color: aliceblue;
     
 }
-.Footer{
-    height: 150px;
-    width: 100%;
-    border: 1px solid red;
-    justify-content: center;
-    align-items: center;
-    /* background-image: url(Portfolio/src/assets/footerimg.png); */
-    background-color: rgb(118, 118, 118);
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    margin-top: 5px;
-    color: gray;
-    padding: 18px;
-    backdrop-filter: blur(25px);
-    position: fixed;
+footer{
+    background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  position: static; /* or 'fixed' if you want it always at the bottom */
+  bottom: 0;
+  width: 100%;
+  margin-top: 10px;
+
 }
+

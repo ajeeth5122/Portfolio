@@ -126,3 +126,16 @@
     padding: 2px;
     margin: 5px 5px;
 }
+.complete{
+    background: greenyellow;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: #444;
+    text-decoration: line-through;
+}

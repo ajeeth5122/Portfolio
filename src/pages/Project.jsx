@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../Component/Header'
 import './Project.css'
 import { Navigate, NavLink, useNavigate } from 'react-router-dom'
+import Footer from '../Component/Footer'
 
 
 function Project() {
@@ -19,7 +20,7 @@ function Project() {
    
 
    </div>
-     
+  <Footer/>
     
     </>
   )

@@ -24,9 +24,16 @@ function TodoList() {
        }
        setTodo((prev)=>[...prev,newtodo]);
        inputRef.current.value="";
-       
-
     }
+    const HandleDelete=(id)=>{
+        setTodo(todo.filter((task)=>task.id !== id))
+    }
+    const HandleComplete=(id)=>{
+       setTodo(todo.map((task)=>
+        task.id === id ? {...task, complete : !task.complete} : task
+      ))
+     }
+
     console.log(todo)
   return (
     <>
@@ -46,15 +53,20 @@ function TodoList() {
         
     
     <div className='todos'>
-        {todo.map((todos)=>
-        <div className='task' key={todos.id}>
+        { todo.map((todos)=>
+        <div className={ todos.complete ? 'complete' : 'task'}key={todos.id}>
           <h1>{todos.text}</h1>
           {todos.mins <= 9 ? <p>Time:{todos.hour}:0{todos.min}</p> : <p>Time:{todos.hour}:{todos.min}</p> }
           <div className='todo-btn'>
-          <button className='comp'>complete</button>
-          <button className='del'>delete</button>
+            {todos.complete ? <button onClick={() => HandleDelete(todos.id)} className='comp'>Clear</button> : 
+            <div className='todo-btn'>
+          <button onClick={() => HandleComplete(todos.id)} className='comp'>complete</button>
+          <button onClick={() => HandleDelete(todos.id)} className='del'>delete</button>
           </div>
-        </div> )}
+            }
+          </div>
+        </div> )
+       }
         </div>
         </div>
     </>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Header from '../Component/Header'
+import Footer from '../Component/Footer';
 
 function Contact() {
 
@@ -35,7 +36,7 @@ function Contact() {
         <button type='submit' >Submit</button>
       </form>
       </div>
-    
+    <Footer/>
     </>
   )
 }

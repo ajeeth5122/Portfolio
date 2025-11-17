@@ -30,7 +30,7 @@ body{
     align-items: center;
     text-align: center;
     /* background-image: url(.//assets/Knight.jpg); */
-   background-color: steelblue;
+   background-color: seagreen;
     /* border: 1px solid red; */
    
     color: #fff;
@@ -74,12 +74,24 @@ body{
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    background-image: linear-gradient( 180deg, lightgreen , rgb(248, 193, 248));
+    /* background-image: linear-gradient( 180deg, lightgreen , rgb(248, 193, 248)); */
     color: black;
     /* align-items: center; */
     padding: 0px;
 /*     
     margin: 10px 20px; */
+  }
+  .main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    background-image: none;
+    background-color: skyblue;
+    padding: 50px 0;
+    margin-top: 0.8px;
+    border-bottom: 1px solid gray;
   }
   .navbar h3{
     font-size: 45px;
@@ -195,7 +207,7 @@ a{
     align-items: center;
     text-align: center; 
     height: 600px;
-    /* background-color: mediumturquoise; */
+    background-color: skyblue;
     background-image: url(./assets/footerimg.png);
     padding: 50px 0;
     margin-top: 0.8px;

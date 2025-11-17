@@ -6,10 +6,12 @@
     /* justify-content: center; */
     align-items: center;
     height: 100vh;
-    /* margin: 20px 10px; */
-    /* background-color: steelblue; */
     background-image: url('Portfolio/src/assets/dog.jpg');
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: 1000%;
+    background-size: cover;
+    background-position: center;
+    backface-visibility: visible;
 }
 .lists{
     display: flex;
@@ -18,7 +20,8 @@
     align-items: center;
     /* border: 2px solid black; */
     height: fit-content;
-    width: 40%;
+    min-width: 50%;
+    padding: 25px;
     margin-top: 45px;
     border-radius: 25px;
     box-shadow: 0 0 20px 0.55px #444;
@@ -30,17 +33,22 @@
     color: black;
     /* border: 1px solid black; */
     text-align: center;
-    width: 100%;
+    /* width: 60%; */
     backdrop-filter: blur(55px);
     border-collapse: collapse;
     border-radius: 25px;
     
-    background-color: beige;
+    /* background-color: beige; */
 }
 .listTitle i{
     font-size: 45px;
     font-weight: 900;
     color: black;
+    margin-right:20px ;
+}
+.listTitle h1{
+    font-family: "Lucida Regular", cursive;
+    
 }
 .inputbutton{
     width: 100%;
@@ -53,7 +61,7 @@
 }   
 .lists input{
     margin: 10px;
-    width: 70%;
+    min-width: 70%;
     /* max-width: 300px; */
     padding: 10px 20px;
     border-radius: 10px;
@@ -84,6 +92,8 @@
 .home{
     position: fixed;
     margin-left: 25px;
+    color: white;
+    letter-spacing: 1px;
 }
 .task{
     border: 1px solid white;
@@ -107,6 +117,9 @@
 .todo-btn button{
     flex-grow: 1;
     border-radius: 5px;
+    padding: 5px;
+    outline: none;
+    border: none;
 }
 
 .comp{
@@ -139,3 +152,4 @@
     color: #444;
     text-decoration: line-through;
 }
+
